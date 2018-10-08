@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    background-size: cover;
+}
+.info{
+    background: rgb(20, 20, 20);
+}
+.logo{
+    height: 20px;
+    width: 20px;
+    margin: 10px;  
+}
+.habilid{
+    width: 70vw;
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    margin-top: 30px;
+    height: auto;
+    margin-right: 15vw;
+    margin-left: 15vw;
+}
+#sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: url(./fondo2.jpg);
+    left: -300px;
+    transition: 1s;
+}
+#sidebar.active{
+    left: 0;
+}
+#btn1.btn-active{
+    margin-left: 300px;
+}
+#sidebar ul li{
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px 24px;
+}
+#sidebar ul a{
+    color: white;
+    text-decoration: none;
+    
+}
+#sidebar .toggle-btn{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    transition: 1s;
+}
+.toggle-btn span{
+    width: 25px;
+    height: 4px;
+    background: #000;
+    display: block;
+    margin-top: 4px;
+}
+.right-content{
+    /* margin-left: 100px; */
+    text-align: left;
+    margin-top: 100px;
+}
+.marginb{
+    margin-bottom: 30px;
+}
+h2{
+    color: rgb(10, 115, 175);
+    font-size: 35px;
+    margin-bottom: 50px;
+    letter-spacing: -3px;
+    font-weight: bold;
+}
+.pcube{
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subtile{
+    margin-top: 50px;
+    font-weight: bolder;
+    padding-left: 7vw;
+    font-size: 30px;
+}
+h3{
+    color: #515151;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.text-center{
+    text-align: center;
+}
+h4{
+    /* color: black; */
+}
+p{
+    text-align: justify;
+    /* color: rgb(5, 81, 126); */
+}
+@media(max-width: 480px){
+    #sidebar{
+        width: 250px;
+        left: -250px;
+    }
+    #btn1.btn-active{
+        margin-left: 220px;
+    }
+    .toggle-btn span{
+        width: 20px;
+    }
+    .right-content{
+        margin-left: 30px;
+    }
+    #btn1{
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: -30px;
+        margin-left: -30px;
+        padding: 12px;
+
+
+    }
+}
